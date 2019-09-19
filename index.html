@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">My Docs</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#pengertian">PENGERTIAN</a></li>
+        <li class="main "><a href="#distribusi-data">DISTRIBUSI DATA</a></li>
+            <li><a href="#a-histogram">a. Histogram :</a></li>
+            <li><a href="#b-pie-chart">b. Pie Chart :</a></li>
+            <li><a href="#c-poligon">c. Poligon :</a></li>
+            <li><a href="#d-ogive">d. Ogive :</a></li>
+            <li><a href="#e-diagram-batang-daun-stem-and-leaf">e. Diagram Batang Daun (Stem and Leaf) :</a></li>
+        <li class="main "><a href="#ukuran-pemusatan">UKURAN PEMUSATAN</a></li>
+            <li><a href="#a-mean">a.    Mean</a></li>
+            <li><a href="#b-median">b. Median</a></li>
+            <li><a href="#c-modus">c. Modus</a></li>
+            <li><a href="#d-skeweness-kecondongan">d. SKEWENESS (KECONDONGAN)</a></li>
+        <li class="main "><a href="#tugas-1">TUGAS 1</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="pengertian">PENGERTIAN</h2>
+<p><strong>Statistik</strong> adalah sekumpulan prosedur untuk mengumpulkan, mengukur, mengklasifikasi, menghitung, menjelaskan, mensintesis, menganalisis, dan menafsirkan data kuantitatif yang diperoleh secara sistematis. Secara garis besar, statistik dibagi menjadi dua komponen utama, yaitu <strong>Statistik Deskriptif</strong>dan <strong>Statistik inferensial</strong>. <strong>Statistik deskriptif</strong> menggunakan prosedur <strong>numerik</strong> dan <strong>grafis</strong> dalam meringkas gugus data dengan cara yang jelas dan dapat dimengerti, sementara <strong>Statistik inferensial</strong>menyediakan prosedur untuk menarik kesimpulan tentang populasi berdasarkan sampel yang kita amati. <strong>Statistik Deskriptif</strong> membantu kita untuk menyederhanakan data dalam jumlah besar dengan cara yang logis. Data yang banyak direduksi dan diringkas sehingga lebih sederhana dan lebih mudah diinterpretasi.</p>
+<p>erdapat <strong>dua metode dasar</strong> dalam statistik deskriptif, yaitu <em>numerik</em> dan <em>grafis</em>.</p>
+<ul>
+<li><strong>Pendekatan numerik</strong> dapat digunakan untuk menghitung nilai statistik dari sekumpulan data, seperti <em>mean</em> dan <em>standar deviasi</em>. Statistik ini memberikan informasi tentang rata-rata dan informasi rinci tentang distribusi data.</li>
+<li><strong>Metode grafis</strong> lebih sesuai daripada metode numerik untuk mengidentifikasi pola-pola tertentu dalam data, dilain pihak, pendekatan numerik lebih tepat dan objektif. Dengan demikian, pendekatan numerik dan grafis satu sama lain saling melengkapi, sehingga sangatlah bijaksana apabila kita menggunakan kedua metode tersebut secara bersamaan.</li>
+</ul>
+<p>Terdapat tiga karakteristik utama dari variabel tunggal:</p>
+<ul>
+<li>Distribusi data (distribusi frekuensi)</li>
+<li>Ukuran pemusatan/tendensi sentral (<em>Central Tendency</em>)</li>
+<li>Ukuran penyebaran (<em>Dispersion</em>)</li>
+</ul>
+<hr />
+<hr />
+<h2 id="distribusi-data">DISTRIBUSI DATA</h2>
+<p>Pengaturan, penyusunan, dan peringkasan data dengan membuat tabel seringkali membantu, terutama pada saat kita bekerja dengan sejumlah data yang besar. Tabel tersebut berisi daftar nilai yang mungkin berbeda (baik data tunggal maupun data berkelompok ) beserta nilai frekuensinya. Frekuensi adalah banyaknya kejadian/munculnya nilai data dengan kategori tertentu. Data yang telah diatur disebut <strong>distribusi frekuensi</strong>.</p>
+<p>Distribusi frekuensi dapat digambarkan dengan dua cara, yaitu sebagai <strong>tabel</strong> ataupun sebuah <strong>grafik</strong>. Grafik data kuantitatif dapat meliputi Histogram, Poligon frekuensi, dll. Sedangkan grafik untuk data kualitatif meliputi Bar Chart, Pie Chart, dll.</p>
+<p>Penyajian data dalam bentuk grafis terdiri dari beberapa macam – macam, yaitu antara lain :</p>
+<h6 id="a-histogram">a. <strong>Histogram</strong> :</h6>
+<p>Histogram yaitu merupakan grafik dari distribusi frekuensi suatu variabel. Tampilan histogram berupa balok. Penyajian data ini terdiri dari dua sumbu utama dengan sudut 900 dimana sebagai absis sumbu X dan sebagai ordinat Y. Lebar balok yaitu merupakan jarak dari batas kelas interval, sedangkan tinggi balok menunjukkan besarnya frekuensi.</p>
+<p><a href="https://rumus.co.id/wp-content/uploads/2018/12/Histogram.png"><img alt="Histogram" src="https://rumus.co.id/wp-content/uploads/2018/12/Histogram.png" /></a>Histogram</p>
+<h6 id="b-pie-chart">b. <strong>Pie</strong> <strong><em>Chart</em></strong> :</h6>
+<p>Pie Chart / Diagram kue adalah sebuah lingkaran yang dibagi menjadi beberapa sektor. Tiap sektor dapat menyatakan besarnya presentase atau bagian untuk masing-masing kelompok.</p>
+<p><a href="https://rumus.co.id/wp-content/uploads/2018/12/Pie-Chart.png"><img alt="Pie Chart" src="https://rumus.co.id/wp-content/uploads/2018/12/Pie-Chart.png" /></a>Pie Chart</p>
+<h6 id="c-poligon">c. <strong>Poligon</strong> :</h6>
+<p>Poligon yaitu merupakan grafik dari distribusi frekuensi tergolong suatu variabel. Tampilan poligon juga berupa garis – garis patah yang diperoleh dengan cara menghubungkan puncak masing – masing nilai tengah kelas. Poligon sangat baik digunakan untuk membandingkan bentuk dari dua distribusi.</p>
+<p><a href="https://rumus.co.id/wp-content/uploads/2018/12/Poligon.png"><img alt="Poligon" src="https://rumus.co.id/wp-content/uploads/2018/12/Poligon.png" /></a>Poligon</p>
+<h6 id="d-ogive">d. <strong>Ogive</strong> :</h6>
+<p>Ogive yaitu merupakan bentuk gambar dari distribusi frekuensi kumulatif suatu variabel. Untuk suatu tabel distribusi frekuensi, dapat juga dibuat ogive positif dan ogive negatifnya.</p>
+<p><a href="https://rumus.co.id/wp-content/uploads/2018/12/Ogive.png"><img alt="Ogive" src="https://rumus.co.id/wp-content/uploads/2018/12/Ogive.png" /></a>Ogive</p>
+<h6 id="e-diagram-batang-daun-stem-and-leaf">e. <strong>Diagram Batang Daun</strong> <strong>(Stem and Leaf)</strong> :</h6>
+<p>Diagram Batang Daun (Stem and Leaf) juga sama dengan histogram, hanya saja informasi yang diperoleh lebih baik karena diagram batang daun memperlihatkan nilai – nilai hasil pengamatan asli. Dalam diagram ini ditampilkan bilangan – bilangan yang juga sebagai batang dan disebelah kananya ditulis bilangan sisanya.</p>
+<p><a href="https://rumus.co.id/wp-content/uploads/2018/12/Diagram-Batang-Daun.png"><img alt="Diagram Batang Daun" src="https://rumus.co.id/wp-content/uploads/2018/12/Diagram-Batang-Daun.png" /></a></p>
+<hr />
+<hr />
+<h2 id="ukuran-pemusatan">UKURAN PEMUSATAN</h2>
+<h6 id="a-mean">a.    Mean</h6>
+<p>Mean atau rata-rata hitung adalah nilai yang diperoleh dari jumlah sekelompok data dibagi dengan banyaknya data. Rata-rata disimbolkan dengan <em>x</em>.</p>
+<ul>
+<li><strong>Rata-Rata untuk Data Tunggal</strong></li>
+</ul>
+<p><img alt="13" src="https://myreisa.files.wordpress.com/2017/09/13.jpg?w=1086" /></p>
+<p><strong>Keterangan:</strong>
+ẋ = mean
+n= banyaknya data</p>
+<p><strong>Contoh Rataan Data tunggal</strong></p>
+<p>Hitunglah nilai rata-rata dari nilai ujian matematika kelas 3 SMU berikut ini: 2, 4, 5, 6, 6, 7, 7, 7, 8, 9.</p>
+<p>Jawab:</p>
+<p><img alt="gif" src="https://myreisa.files.wordpress.com/2017/09/gif.gif?w=1086" /></p>
+<ul>
+<li><strong>Rata-Rata untuk Data Berkelompok</strong></li>
+</ul>
+<p><img alt="zzz" src="https://myreisa.files.wordpress.com/2017/09/zzz.png?w=1086" /></p>
+<p>Keterangan :
+fi          = frekuensi
+xi         = nilai tengah
+Nilai tengah adalah jumlah tepi bawah dan tepi atas di bagi 2.</p>
+<p>Oke langsung kita coba, menggunakan data berkelompok yang telah kita punya :</p>
+<p><img alt="2cbb86ea6594d621ba5c4917a324d106-0" src="https://myreisa.files.wordpress.com/2017/09/2cbb86ea6594d621ba5c4917a324d106-0.jpg?w=576&amp;h=270" /></p>
+<p><img alt="2cbb86ea6594d621ba5c4917a324d106-0 - Copy (2)" src="https://myreisa.files.wordpress.com/2017/09/2cbb86ea6594d621ba5c4917a324d106-0-copy-2.jpg?w=317&amp;h=154" /></p>
+<h6 id="b-median">b. Median</h6>
+<p>Median adalah nilai data yang terletak di tengah setelah data diurutkan. Dengan demikian, median membagi data menjadi dua bagian yang sama besar. Median (nilai tengah) disimbolkan dengan Me.</p>
+<ul>
+<li>
+<p><strong>Median untuk Data Tunggal</strong></p>
+</li>
+<li>
+<p>Jika banyaknya data n ganjil</p>
+</li>
+</ul>
+<p><img alt="6" src="https://myreisa.files.wordpress.com/2017/09/6.jpg?w=151&amp;h=96" /></p>
+<ol>
+<li>Jika banyaknya data <em>n</em> genap</li>
+</ol>
+<p><img alt="7" src="https://myreisa.files.wordpress.com/2017/09/7.jpg?w=163&amp;h=101" /></p>
+<p>Keterangan:</p>
+<p><em>Me</em> = Median</p>
+<p><em>n</em> = jumlah data</p>
+<p><em>x</em> = nilai data</p>
+<p><strong>Contoh Median Data Tunggal</strong></p>
+<p>Tentukan median dari data berikut.</p>
+<ol>
+<li>
+<p>8,6,4,3,7,5,8,10,8,9,8,5</p>
+</li>
+<li>
+<p>Sepuluh orang siswa dijadikan sampel dan dihitung tinggi badannya. Hasil pengukuran tinggi badan kesepuluh siswa tersebut adalah sebagai berikut.</p>
+</li>
+</ol>
+<p>172, 167, 180, 171, 169, 160, 175, 173, 170, 165</p>
+<p>Hitunglah median dari data tinggi badan siswa!</p>
+<p>Jawab :</p>
+<ol>
+<li>
+<p>Data diurutkan : 3 4 5 5 6 7 8 8 8 8 9 10
+   N= 12 (genap)
+   Jadi, mediannya adlah 7,5</p>
+</li>
+<li>
+<p>Karena jumlah data genap, maka penghitungan median menggunakan rumus median untuk data genap. Proses penghitungannya adalah sebagai berikut.</p>
+</li>
+</ol>
+<p><a href="https://myreisa.files.wordpress.com/2017/09/d18bb-penghitunganmediandataganjil.png"><img alt="penghitungan median data genap" src="https://myreisa.files.wordpress.com/2017/09/d18bb-penghitunganmediandataganjil.png?w=1086" /></a></p>
+<p>Untuk melanjutkan penghitungan, kita harus terlebih dahulu mengetahui nilai <em>x5</em> dan <em>x6</em>. Kedua nilai data tersebut dapat diperoleh dengan mengurutkan semua data. Hasil pengurutan adalah sebagai berikut.</p>
+<p>160, 165, 167, 169, <strong>170</strong>, <strong>171</strong>, 172, 173, 175, 180</p>
+<p>Dari pengurutan tersebut diperoleh nilai <em>x5</em> sama dengan 170 dan <em>x6</em> sama dengan 171. Dengan demikian penghitungan median dapat dilanjutkan.</p>
+<p><a href="https://myreisa.files.wordpress.com/2017/09/d4720-penghitunganmediandatagenap2.png"><img alt="img" src="https://myreisa.files.wordpress.com/2017/09/d4720-penghitunganmediandatagenap2.png?w=1086" /></a></p>
+<ul>
+<li><strong>Median untuk data berkelompok</strong></li>
+</ul>
+<p><img alt="zzz1" src="https://myreisa.files.wordpress.com/2017/09/zzz1.png?w=1086" /></p>
+<p>Keterangan :
+<em>Tb  = Tepi bawah kelas median (Batas bawah – 0,5)</em> 
+<em>F     = Frekuensi kumulatif sebelum median</em>
+<em>f      = Frekuensi</em>
+<em>c     = Panjang kelas</em>
+<em>n     = Jumlah frekuensi</em></p>
+<p>Yuk kita coba lagi, menggunakan data berkelompok yang telah kita punya :</p>
+<p><img alt="Interval-Jumlah-Sekrup-Caca1 - Copy" src="https://myreisa.files.wordpress.com/2017/09/interval-jumlah-sekrup-caca1-copy.jpg?w=423&amp;h=280" /></p>
+<ul>
+<li>Letak kelas median: Setengah dari seluruh data = 30, terletak pada kelas ke-3 (jumlah 9-10)</li>
+<li>Tb = 9 – 0,5 = 8,5</li>
+<li>c    = 2</li>
+<li>n = 80, f = 24</li>
+<li>f = 5 (frekuensi kelas median)</li>
+<li>F = 5 + 6 = 11</li>
+</ul>
+<p><img alt="2cbb86ea6594d621ba5c4917a324d106-0 - Copy" src="https://myreisa.files.wordpress.com/2017/09/2cbb86ea6594d621ba5c4917a324d106-0-copy.jpg?w=288&amp;h=160" /></p>
+<h6 id="c-modus">c. Modus</h6>
+<p>Modus adalah data yang paling sering muncul atau memiliki frekuensi tertinggi. Modus dilambangkan dengan Mo.  Beberapa kemungkinan tentang modus suatu gugus data:</p>
+<ul>
+<li>Apabila pada sekumpulan data terdapat dua modus, maka gugus data tersebut dikatakan <strong>bimodal</strong>.</li>
+<li>Apabila pada sekumpulan data terdapat lebih dari dua modus, maka gugus data tersebut dikatakan <strong>multimodal</strong>.</li>
+<li>Apabila pada sekumpulan data tidak terdapat modus, maka gugus data tersebut dikatakan <strong>tidak mempunyai modus</strong>.</li>
+<li><strong>Modus untuk data tunggal</strong></li>
+</ul>
+<p>Modus dari data tunggal adalah data yang paling sering muncul.</p>
+<p><em>Contoh :</em></p>
+<p>Tentukan modus dari data berikut !</p>
+<p>4, 8, 7, 4, 6, 3, 6, 8, 6, 3</p>
+<p><em>Jawab :</em></p>
+<p>Data yang paling sering muncul adalah 6, maka Mo = 6</p>
+<ul>
+<li><strong>Modus untuk data berkelompok</strong></li>
+</ul>
+<p><img alt="mod" src="https://myreisa.files.wordpress.com/2017/09/mod.png?w=1086" /></p>
+<p>Keterangan :</p>
+<p><em>Tb = Tepi bawah kelas modus</em></p>
+<p><em>d1 = Selisih antara frekuensi modus dengan frekuensi sebelumnya</em></p>
+<p><em>d2 = selisih antara frekuensi modus dengan frekuensi sesudahnya</em></p>
+<p><em>c = Panjang kelas</em></p>
+<p>Nah, berapa nilai modus dari data berkelompok yang kita punya?</p>
+<p><img alt="Interval-Jumlah-Sekrup-Caca1.jpg" src="https://myreisa.files.wordpress.com/2017/09/interval-jumlah-sekrup-caca1.jpg?w=289&amp;h=251" /></p>
+<ul>
+<li>Kelas modul = kelas ke-4</li>
+<li>Tb = 11-0.5 = 10.5</li>
+<li>b1 = 7 – 5 = 2</li>
+<li>b2 = 7 – 6 = 1</li>
+<li>c = 2</li>
+</ul>
+<p><img alt="2cbb86ea6594d621ba5c4917a324d106-0" src="https://myreisa.files.wordpress.com/2017/09/2cbb86ea6594d621ba5c4917a324d106-01.jpg?w=340&amp;h=156" /></p>
+<h6 id="d-skeweness-kecondongan">d. SKEWENESS (KECONDONGAN)</h6>
+<p>Kecondongan suatu kurva dapat dilihat dari perbedaan letak mean, median dan modusnya. Jika ketiga ukuran pemusatan data tersebut berada pada titik yang sama, maka dikatakan simetris atau data berdistribusi normal. Sedangkan jika tidak berarti data tidak simetris atau tidak berdistribusi normal.</p>
+<p>Ukuran kecondongan data terbagi atas tiga bagian, yaitu :</p>
+<ul>
+<li>Kecondongan data ke arah kiri (condong negatif) dimana nilai modus lebih dari nilai mean (modus &gt; mean).</li>
+<li>Kecondongan data simetris (distribusi normal) dimana nilai mean dan modus adalah sama (mean = modus).</li>
+<li>Kecondongan data ke arah kanan (condong positif) dimana nilai mean lebih dari nilai modus (mean &gt; modus).</li>
+</ul>
+<blockquote>
+<p><a href="https://myreisa.files.wordpress.com/2017/09/5e93f-skewness.png"><img alt="img" src="https://myreisa.files.wordpress.com/2017/09/5e93f-skewness.png?w=1086" /></a></p>
+</blockquote>
+<p><img alt="grafik" src="https://myreisa.files.wordpress.com/2017/09/grafik.jpg?w=1086" /></p>
+<p>Dari gambar grafik diatas dapat kita lihat bahwa nilai modus lebih dari pada nilai mean (modus&gt;mean). Sehingga Skewness (kecondongan) dari data tersebut adalah Skewed to the left or negatively skewed (Kecondongan data ke arah kiri atau condong negatif).</p>
+<h2 id="tugas-1">TUGAS 1</h2>
+<p>Klik untuk masuk ke tugas 1 <a href="https://github.com/wardaMy/Penambangan_Data.git">DISINI</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-09-19 23:10:52
+-->
